@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/index.css">
+
+  <!-- //부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- fontawesome -->
+
+  <script src="https://kit.fontawesome.com/a4d2993e00.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!--자바스크립트 -->
+
+  <script src="app.js" defer></script>
+
+
+
+  <title>2022 대선후보 공약 페이지</title>
+</head>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<body>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- 네비게이션 바 -->
+
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <img src="/img/선거 도장.png" alt="">
+      <a href="index.html">2022년 대선후보 공약</a>
+    </div>
+
+    <ul class="navbar_menu">
+      <li><a href="/page/simple.html">간단공약</a></li>
+      <li><a href="/page/namuwiki.html">공약 보러가기</a></li>
+      <li><a href="/page/compare.html">공약 비교하기</a></li>
+      <li><a href="/page/support.html">지지율</a></li>
+      <li><a href="mailto: ethesoon@gmail.com">Contact</a></li>
+    </ul>
+
+    <a href="#" class="navbar_togglebtn">
+      <i class="fas fa-bars"></i>
+    </a>
+
+  </nav>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////
+  배너섹션 -->
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/img/koreaelection.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+          height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">2022년 대선후보 <br> 공약을 한눈에!</h1>
+        <p class="lead">이번 대선을 제대로 알고 투표하자! 투표에 있어서 공약은 매우 중요합니다. 어떤 후보가 어떠한 공약을 가지고 대선에 출마하는지 알아야 올바른 투표권을 행사할 수 있습니다.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="/page/simple.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">간단공약
+              보러가기</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/img/koreaelection.png" alt="" width="100%" height="100%">
+    <h1 class="display-5 fw-bold">2022년 대선후보 <br> 공약을 한눈에!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">이번 대선을 제대로 알고 투표하자! 투표에 <br> 있어서 공약은 매우 중요합니다. <br> 어떤 후보가 어떠한 공약을 가지고 대선에 <br> 출마하는지 알아야 올바른
+        <br> 투표권을 행사할 수
+        있습니다.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="/page/simple.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">간단공약
+            보러가기</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////
+                        프로필 섹션 -->
+
+  <div class="profile-section">
+
+    <button class="tablink" onclick="openPage('lee', this, '#004ea1')" id="defaultOpen">이재명</button>
+    <button class="tablink" onclick="openPage('yoon', this, '#a12036')">윤석열</button>
+    <button class="tablink" onclick="openPage('an', this, '#EA5504')">안철수</button>
+    <button class="tablink" onclick="openPage('sim', this, '#baac0d')">심상정</button>
+
+    <div id="lee" class="tabcontent">
+      <!-- 이재명 프로필 -->
+
+      <div class="card">
+        <img src="/img/lee.jpg" style="width:100%">
+        <h1>이재명</h1>
+        <p class="title">제 20대 더불어민주당 대선후보</p>
+
+        <div class="social-link">
+          <a href="https://twitter.com/Jaemyung_Lee?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+              class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/2_jaemyung/?hl=ko"><i class="fa fa-instagram"></i></a>
+          <a href="https://ko-kr.facebook.com/jaemyunglee"><i class="fa fa-facebook"></i></a>
+        </div>
+
+
+        
+<a href="https://www.joongang.co.kr/election2022/candidates/LeeJaeMyung" id="#"><button>자세히보기</button></a>
+      </div>
+    </div>
+
+    <div id="yoon" class="tabcontent">
+      <!--윤석열 프로필-->
+      <div class="card">
+        <img src="/img/yoon.jpg" style="width:100%">
+        <h1>윤석열</h1>
+        <p class="title">제 20대 국민의힘 대선후보</p>
+
+        <div class="social-link">
+          <a href="https://twitter.com/sukyeol__yoon"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/sukyeol.yoon/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/sukyeol.yoon"><i class="fa fa-facebook"></i></a>
+        </div>
+
+      
+
+        <a href="https://www.joongang.co.kr/election2022/candidates/YoonSeokRyeol"><button>자세히보기</button></a>
+      </div>
+    </div>
+
+
+    <div id="an" class="tabcontent">
+      <!--안절수프로필-->
+
+      <div class="card">
+        <img src="/img/an.jpg" style="width:100%">
+        <h1>안철수</h1>
+        <p class="title">제 20대 국민의당 대선후보</p>
+
+        <div class="social-link">
+          <a href="https://twitter.com/cheolsoo0919?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+              class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/ahncheolsoo/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ahncs111"><i class="fa fa-facebook"></i></a>
+        </div>
+
+        <a href="https://www.joongang.co.kr/election2022/candidates/AhnCheolSoo"><button>자세히보기</button></a>
+        <!-- <a href="https://ahncheolsoo.kr/"><button class="personal_sitebtn">안철수 개인 사이트</button></a> -->
+      </div>
+
+    </div>
+
+
+    <div id="sim" class="tabcontent">
+      <!--심상정 프로필-->
+
+      <div class="card">
+        <img src="/img/sim.jpg" style="width:100%">
+        <h1>심상정</h1>
+        <p class="title">제 20대 정의당 대선후보</p>
+
+        <div class="social-link">
+          <a href="https://twitter.com/sangjungsim?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+              class="fa fa-twitter"></i></a>
+          <a href="https://ko-kr.facebook.com/simsangjung"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/simparazzi/"><i class="fa fa-facebook"></i></a>
+        </div>
+
+        <a href="https://www.joongang.co.kr/election2022/candidates/ShimSangJung"><button>자세히보기</button></a>
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- //////////////////////////////////////////////////////////////
+          후보 관련 뉴스 -->
+
+  <section class="news_crawling_section">
+
+    <h2 class="news_section_title">후보 관련 뉴스</h2>
+
+    <div class="news-crawling">
+      <div class="all_news">
+        <div class="news_title">
+          기사제목
+        </div>
+        <!-- <div class="news_text">
+          기사 내용
+        </div> -->
+
+        <div class="news_link">
+          <a href=""><button>기사 보러가기</button></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown">
+    <h2>2022 대선 COUNTDOWN</h2>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("mar 9, 2022 09:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "일 " + hours + "시 " +
+          minutes + "분 " + seconds + "초 ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </section>
+
+  <section class="footer-section">
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="/page/simple.html" class="nav-link px-2 text-muted">간단공약</a></li>
+          <li class="nav-item"><a href="/page/namuwiki.html" class="nav-link px-2 text-muted">공약 보러가기</a></li>
+          <li class="nav-item"><a href="/page/compare.html" class="nav-link px-2 text-muted">공약 비교하기</a></li>
+          <li class="nav-item"><a href="/page/support.html" class="nav-link px-2 text-muted">지지율</a></li>
+          <li class="nav-item"><a href="mailto: ethesoon@gmail.com" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022; <a href="https://www.instagram.com/dev.choi28/">@dev.choi28</a>,
+          personal-project</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MNNQJ5ZLJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2MNNQJ5ZLJ');
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

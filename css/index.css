@@ -1,0 +1,446 @@
+*,
+html {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* ////////////////////////////////////////////
+네비게이션 바 */
+
+.navbar_logo a {
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar_logo a:hover {
+	color: blueviolet;
+}
+
+.navbar_logo img {
+	width: 50px;
+}
+
+.navbar_menu a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 8px 12px;
+}
+
+.navbar_menu {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+
+}
+
+.navbar_menu li {
+	padding: 8px 12px;
+}
+
+.navbar_menu li a:hover {
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.navbar_togglebtn {
+	display: none;
+	position: absolute;
+	right: 20px;
+}
+
+.navbar_togglebtn i {
+	font-size: 24px;
+	color: black;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 8px 24px;
+	}
+
+	.navbar_menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.navbar-menu li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar_togglebtn {
+		display: block;
+	}
+
+	.navbar_menu.active {
+		display: flex;
+	}
+
+	.navbar_logo a {
+		margin-right: 30px;
+		font-size: 20px;
+	}
+
+	.navbar_togglebtn {
+		margin-top: 8px;
+		position: absolute;
+		right: 20px;
+	}
+}
+
+
+
+/* //////////////////////////////////////////////
+배너 섹션  -부트 스트랩 작업*/
+
+
+@media screen and (max-width: 768px) {
+	.col-xxl-8 {
+		display: none;
+	}
+
+	.col-lg-6 .lead {
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.text-center {
+		display: none;
+	}
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////
+프로필 섹션 */
+
+.tablink {
+	background-color: #000;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 25%;
+}
+
+.tablink:hover {
+	background-color: #000;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+}
+
+#lee {
+	background-color: #004ea1;
+}
+
+#yoon {
+	background-color: #a12036;
+}
+
+#an {
+	background-color: #EA5504;
+}
+
+#sim {
+	background-color: #baac0d;
+}
+
+/* //프로필 섹션 */
+.profile-section .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.profile-section .card img{
+	border-radius: 5px;
+}
+
+.card h1 {
+	margin-top: 10px;
+	color: #000;
+	font-weight: bold;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.profile-section .card a i {
+	display: inline-block;
+	text-align: center;
+	margin: 24px 0;
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	display: inline-block;
+}
+
+.profile-section .card a i:hover {
+	color: blueviolet;
+}
+
+.personal_sitebtn{
+	margin-top: 5px;
+}
+
+button:hover,
+a:hover {
+	opacity: 0.7;
+}
+
+/* /////////////////////////////////////////
+Modalbutton */
+/* The Modal (background) */
+
+
+
+/* //////////////////////////////////////////////////////////
+후보 관련 뉴스 */
+
+.news_crawling_section {
+	display: none;
+	margin-top: 10px;
+}
+
+.news_section_title {
+	font-weight: bold;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.news_crawling_section h3 {
+	margin-top: 30px;
+}
+
+.news-crawling .all_news {
+	margin: 10px;
+}
+
+
+.news-crawling {
+	margin: 10px;
+	width: auto;
+	height: auto;
+	border: solid;
+}
+
+.all_news .news_title {
+	background-color: #000;
+	margin: 10px;
+	width: auto;
+	height: 30px;
+	border: solid;
+
+	color: whitesmoke;
+}
+
+.all_news .news_text {
+	background-color: #000;
+	margin: 10px;
+	width: auto;
+	height: auto;
+	border: solid;
+
+	color: white;
+}
+
+
+.news_link a button {
+	text-decoration: none;
+	width: auto;
+	margin: 10px;
+	padding: 5px 10px;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #000;
+	color: white;
+}
+
+/* //////////////////////////////////////
+countdown */
+
+.countdown h2{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.countdown p{
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+	margin: 50px;
+	font-size: 60px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 768px){
+	.countdown p{
+		padding: 10px;
+		font-size: 25px;
+		margin-top: 40px;
+		margin: 50px;
+	}
+}
+
+
+
+/* ///////////////////////////////////////////// */
+/* 
+//////////////////////////////////////////////////
+footer */
+
+.b-example-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+	vertical-align: -.125em;
+	fill: currentColor;
+}
+
+/* //////////////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* simple.html */
+
+.container_simple {
+	height: 200px;
+	position: relative;
+}
+
+.center_simple_btn {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+.container_simple button {
+	margin: 15px;
+	width: 600px;
+	height: 70px;
+
+	border: none;
+	border-radius: 10px;
+
+	background-color: white;
+	border: solid;
+	color: black;
+
+	font-size: 25px;
+	font-weight: bold;
+
+	box-shadow: 2px 1px 10px 1px black;
+
+
+}
+
+.container_simple a {
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+}
+
+.container_simple a button i {
+	margin-left: 300px;
+	margin-right: 10px;
+}
+
+.lee_simple button {
+	border: none;
+	background-color: #004ea1;
+	color: white;
+}
+
+.yoon_simple button {
+	border: none;
+	background-color: #a12036;
+	color: white;
+}
+
+.an_simple button {
+	border: none;
+	background-color: #EA5504;
+	color: white;
+}
+
+.sim_simple button {
+	border: none;
+	background-color: #baac0d;
+	color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+	.container_simple button {
+		width: 300px;
+		height: 70px;
+		font-size: 25px;
+	}
+
+	.container_simple a button i {
+		margin-left: 50px;
+	}
+}
